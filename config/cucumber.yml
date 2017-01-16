@@ -1,0 +1,2 @@
+<% options = "--no-source -t ~@wip --color --format pretty" %>
+default: --no-source --color --format pretty CUCUMBER_ENV=local

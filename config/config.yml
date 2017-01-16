@@ -1,0 +1,31 @@
+default: &default
+
+local:
+  :url: https://app.kountable.com
+  :marketing_url: https://kountable.com
+  :credentials:
+    :valid:
+      :email: frank@k.com
+      :password: ssssss
+    :invalid:
+      :email: test@k.com
+      :password: testtttt
+    :reset_password_email: frank2@k.com
+  :info_to_change:
+    :first_name: Ruslan
+    :last_name: Naumenko
+    :address: 138 Hai Ba Trung
+    :state: Ho Chi Minh
+    :city: Ho Chi Minh
+    :district: District 1
+    :sector: Da Kao
+    :postal_code: 70000
+  :default_info:
+    :first_name: Kirikami
+    :last_name: Sama
+    :address: Hoshi Ryoukan
+    :state: Ishikava
+    :city: Hoshi
+    :district: Komatsu
+    :sector: Kanagawa
+    :postal_code: 666
