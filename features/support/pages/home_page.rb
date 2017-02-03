@@ -12,7 +12,7 @@ class HomePage < BasePage
   end
 
   def go_to_sign_in
-    wait_until { logo_element.visible? }
+    wait_until { sign_in_element.visible? }
     sign_in_element.click
   end
 

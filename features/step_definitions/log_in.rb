@@ -10,6 +10,6 @@ When /^I click on forgot password button$/ do
   on(LoginPage).open_forgot_password_form
 end
 
-Then /^On (.*) I should see error message$/ do |page|
-  expect(on(page).have_error_message?).to be_truthy
+Then /^On (.*) I should see (.*) error message$/ do |page, type|
+  expect(on(page).have_error_message? type).to be_truthy
 end

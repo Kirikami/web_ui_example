@@ -1,11 +1,5 @@
 Given /^I navigate to (.*) page$/ do |page|
-  if page == 'sign_in'
-    on(HomePage).go_to_sign_in
-  elsif page == 'sign_up'
-    on(HomePage).go_to_sign_in
-  else
-    $LOG.error("There is no #{page}")
-  end
+    on(HomePage).send("go_to_#{page}")
 end
 
 Then /^I (should|should not) see (.*) page$/ do |should, page|

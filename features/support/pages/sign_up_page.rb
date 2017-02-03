@@ -21,7 +21,7 @@ class SignUpPage < BasePage
     login
   end
 
-  def have_error_message?
+  def have_error_message? type
     error_message_element.visible?
   end
 

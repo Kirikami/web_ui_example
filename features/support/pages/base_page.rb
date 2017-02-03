@@ -6,4 +6,8 @@ class BasePage
   BASE_URL ||= Fixtures.instance[:url]
   CREDENTIALS ||= Fixtures.instance[:credentials]
 
+  def switch_to_last_tab
+    @browser.driver.switch_to.window( @browser.driver.window_handles.last )
+  end
+
 end

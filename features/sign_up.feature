@@ -13,4 +13,4 @@ Feature: Log in
     Given I am on SignUpPage page
     When I register with already_registered credentials
     Then I should not see HomePage page
-    And On SignUpPage I should see error message
+    And On SignUpPage I should see registered error message
