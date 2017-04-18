@@ -28,7 +28,7 @@ class LoginPage < BasePage
     if type == 'credentials'
       error_message_element.visible?
     elsif type == 'input'
-      input_error_message_elements.each {|element| result = element.visible?; return result if !result}
+      input_error_message_elements.each {|element| result = element.visible?; return result unless result }
     end
   end
 

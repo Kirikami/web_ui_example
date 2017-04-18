@@ -5,7 +5,7 @@ local:
   :marketing_url: https://kountable.com
   :credentials:
     :valid:
-      :email: frank@k.com
+      :email: ruslan@seesawlabs.com
       :password: ssssss
     :invalid:
       :email: test@k.com

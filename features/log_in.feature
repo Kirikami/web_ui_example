@@ -3,11 +3,10 @@ Feature: Log in
   As a end user
   I want to log in
 
-#  Scenario: Sign in as valid user
-#    Given I am on HomePage page
-#    When I navigate to sign_in page
-#    And I submit valid credentials
-#    Then I should see DashboardPage page
+  Scenario: Sign in as valid user
+    Given I am on LoginPage page
+    When I submit valid credentials
+    Then I should see DashboardPage page
 
   Scenario: Sign in as invalid user
     Given I am on LoginPage page
