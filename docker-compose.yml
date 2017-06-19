@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+  ui-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./tests/report/:/home/uitests/public_app_ui/gen/
+      - ./tests/logs/:/home/uitests/public_app_ui/build/
+      - ./build/allure-report/:/home/uitests/public_app_ui/allure-report/
+    command: sleep infinity
+  allure-report:
+    build:
+     context: .
+     dockerfile: images/ngnix/Dockerfile
+    ports:
+      - "5000:80"
+    volumes_from:
+      - ui-tests
+
