@@ -24,9 +24,10 @@ class DashboardPage < BasePage
 
   INFORMATION_TO_UPDATE ||= Fixtures.instance[:info_to_change]
   DEFAULT_INFORMATION ||= Fixtures.instance[:default_info]
-  def have_logo?
 
-    logo_element.visible?
+  def have_logo?
+    sleep 1
+    logo_element.exists? && logo_element.visible?
   end
 
   def edit button

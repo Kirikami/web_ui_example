@@ -10,12 +10,12 @@ services:
       - ./tests/logs/:/home/uitests/public_app_ui/build/
       - ./build/allure-report/:/home/uitests/public_app_ui/allure-report/
     command: sleep infinity
-  allure-report:
-    build:
-     context: .
-     dockerfile: images/ngnix/Dockerfile
-    ports:
-      - "5000:80"
-    volumes_from:
-      - ui-tests
+    #  allure-report:
+    #    build:
+    #     context: .
+    #     dockerfile: ./images/nginx/Dockerfile
+    #    ports:
+    #      - "5000:80"
+    #    volumes_from:
+    #      - ui-tests
 

@@ -3,6 +3,7 @@ Given /^I navigate to (.*) page$/ do |page|
 end
 
 Then /^I (should|should not) see (.*) page$/ do |should, page|
+  p should
   if should == 'should'
     expect(on(page).have_logo?).to be_truthy
   else
