@@ -31,6 +31,7 @@ module Watir
       end
 
       check_for_ajax
+      sleep 1
       if browser.element.div(id: 'error').exists?
         error = browser.element.div(id: 'error').text
         $LOG.error error

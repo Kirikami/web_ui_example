@@ -1,6 +1,6 @@
 class BrowserHandler
 
-  BROWSER_CONF ||= {chrome: {name: 'chrome', page_wait: 120, element_wait: 120, full_screen: true},
+  BROWSER_CONF ||= {chrome: {name: 'chrome', page_wait: 120, element_wait: 120, full_screen: false},
                     ff: {name: 'firefox', page_wait: 120, element_wait: 120, full_screen: true}
   }
 
