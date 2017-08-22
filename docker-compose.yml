@@ -2,10 +2,8 @@ version: '2'
 
 services:
   ui-tests:
-    image:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
+    image: kirikami/public-app-ui
+    voumes:
       - ./tests/report/:/home/uitests/public_app_ui/gen/
       - ./tests/logs/:/home/uitests/public_app_ui/build/
       - ./build/allure-report/:/home/uitests/public_app_ui/allure-report/
